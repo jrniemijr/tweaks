@@ -1,0 +1,13 @@
+# Example commands
+# create a basic changelog
+git log --oneline --no-merges <last tag>..HEAD
+
+# check what you are about to pull
+git log --oneline --no-merges HEAD..<remote>/<branch>
+ex.
+$ git checkout feature/fonts
+$ git fetch
+$ git log --oneline --no-merges ..origin/feature/fonts
+
+# view more complex log
+git log --graph --all --decorate --stat --date=iso
