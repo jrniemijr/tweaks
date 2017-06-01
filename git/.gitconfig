@@ -25,3 +25,12 @@ git config --global alias.shorty 'status --short --branch'
 # always create a merge commit
 # for no rebasing and not to use fast forward
 git config --global alias.merc 'merge --no-ff'
+
+# more git log aliases from Harry Roberts
+# https://csswizardry.com/2017/05/little-things-i-like-to-do-with-git/
+# see what branches recently worked on
+git config --global alias.recent 'git for-each-ref --count=10 --sort=-committerdate refs/heads/ --format="%(refname:short)"'
+# overview of work
+git config --global alias.overview 'git log --all --since='2 weeks' --oneline --no-merges'
+# see what I have done
+#git config --global alias.recap 'git log --all --oneline --no-merges --author=<your email address>'
