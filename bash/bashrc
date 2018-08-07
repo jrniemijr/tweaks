@@ -1,0 +1,19 @@
+
+# show date time in history output
+HISTTIMEFORMAT="%F %T  "
+
+# useful for say finding things in code
+alias "grin"="grep -rin"
+
+alias q='exit'
+alias home='cd ~/'
+alias c='clear'
+
+alias l='ls -CF'
+alias la='/bin/ls -AFhl --color=auto --group-directories-first'
+alias ll='/bin/ls -Fhl --color=auto --group-directories-first'
+alias ls='/bin/ls -F --color=auto --group-directories-first'
+alias h='history'
+alias hg='history | grep --color=auto'
+alias pew='killall'
+alias nuke='killall -9'
