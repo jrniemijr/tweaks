@@ -17,3 +17,7 @@ alias h='history'
 alias hg='history | grep --color=auto'
 alias pew='killall'
 alias nuke='killall -9'
+
+calc () {
+    bc -l <<< "$@"
+}
