@@ -18,6 +18,15 @@ alias hg='history | grep --color=auto'
 alias pew='killall'
 alias nuke='killall -9'
 
+# git section
+alias gs='git status '
+alias ga='git add '
+alias gaa='git add -A '
+alias gb='git branch '
+alias gc='git commit '
+alias gcm='git commit -m '
+alias go='git checkout '
+
 calc () {
     bc -l <<< "$@"
 }
